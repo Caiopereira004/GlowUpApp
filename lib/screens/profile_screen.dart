@@ -29,12 +29,8 @@ class ProfileScreen extends StatelessWidget {
         backgroundColor: c.surface,
         title: const Text('LGPD & Privacidade (Lei 13.709/2018)'),
         content: const Text(
-          '1. Finalidade Exclusiva: Seus dados cadastrais, foto de perfil e preferências opcionais de pele são utilizados unicamente para personalizar suas rotinas diurna e noturna.
-
-'
-          '2. Segurança: Senhas seguem política de complexidade forte e você pode remover seu perfil de pele a qualquer momento.
-
-'
+          '1. Finalidade Exclusiva: Seus dados cadastrais, foto de perfil e preferências opcionais de pele são utilizados unicamente para personalizar suas rotinas diurna e noturna.\n\n'
+          '2. Segurança: Senhas seguem política de complexidade forte e você pode remover seu perfil de pele a qualquer momento.\n\n'
           '3. Transparência Comercial: A curadoria redireciona diretamente para lojas parceiras oficiais.',
           style: TextStyle(fontSize: 13, height: 1.45),
         ),
@@ -60,7 +56,10 @@ class ProfileScreen extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Meu Perfil', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: c.text)),
+          Text(
+            'Meu Perfil',
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: c.text),
+          ),
           const SizedBox(height: 16),
 
           // Card de Perfil com Foto Alterável
@@ -143,7 +142,10 @@ class ProfileScreen extends StatelessWidget {
                       children: [
                         Icon(Icons.auto_awesome_rounded, size: 18, color: c.primary),
                         const SizedBox(width: 8),
-                        Text('Questionário de Pele (Opcional)', style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5, color: c.text)),
+                        Text(
+                          'Questionário de Pele (Opcional)',
+                          style: TextStyle(fontWeight: FontWeight.w800, fontSize: 13.5, color: c.text),
+                        ),
                       ],
                     ),
                     Container(
@@ -243,7 +245,10 @@ class ProfileScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const Text('Tamanho do Texto', style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600)),
-                    Text('${provider.fontScale.round()}%', style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: c.primary)),
+                    Text(
+                      '${provider.fontScale.round()}%',
+                      style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: c.primary),
+                    ),
                   ],
                 ),
                 Slider(
